@@ -16,7 +16,7 @@ public class AchievementsAether {
 	public static AchievementPage ACpage;
 
 	public static void initialization() {
-		enter_aether = new AetherAchievement("advancement.aether_legacy.enter_aether", "enter_aether", 0, 1, Blocks.glowstone, (Achievement) null).registerStat();
+		enter_aether = new AetherAchievement("advancement.aether_legacy.enter_aether", "enter_aether", 0, 1, Blocks.quartz_block, (Achievement) null).registerStat();
 		defeat_bronze = new AetherAchievement("advancement.aether_legacy.bronze_dungeon", "bronze_dungeon", -2, 3, new ItemStack(ItemsAether.dungeon_key, 1, 0), enter_aether).registerStat();
 		defeat_silver = new AetherAchievement("advancement.aether_legacy.silver_dungeon", "silver_dungeon", 0, 4, new ItemStack(ItemsAether.dungeon_key, 1, 1), enter_aether).registerStat();
 		defeat_gold = new AetherAchievement("advancement.aether_legacy.gold_dungeon", "gold_dungeon", 2, 3, new ItemStack(ItemsAether.dungeon_key, 1, 2), enter_aether).registerStat();

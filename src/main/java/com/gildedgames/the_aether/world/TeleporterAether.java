@@ -366,7 +366,7 @@ public class TeleporterAether extends Teleporter {
 						i4 = j2 + k3;
 						j4 = k2 + (j3 - 1) * l2 - i3 * l5;
 						flag = k3 < 0;
-						this.worldServerInstance.setBlock(l3, i4, j4, flag ? Blocks.glowstone : Blocks.air);
+						this.worldServerInstance.setBlock(l3, i4, j4, flag ? Blocks.quartz_block : Blocks.air);
 					}
 				}
 			}
@@ -379,7 +379,7 @@ public class TeleporterAether extends Teleporter {
 					i4 = j2 + k3;
 					j4 = k2 + (j3 - 1) * l2;
 					flag = j3 == 0 || j3 == 3 || k3 == -1 || k3 == 3;
-					this.worldServerInstance.setBlock(l3, i4, j4, (Block) (flag ? Blocks.glowstone : BlocksAether.aether_portal), 0, 2);
+					this.worldServerInstance.setBlock(l3, i4, j4, (Block) (flag ? Blocks.quartz_block : BlocksAether.aether_portal), 0, 2);
 				}
 			}
 

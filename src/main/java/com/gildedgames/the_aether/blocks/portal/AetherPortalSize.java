@@ -63,13 +63,13 @@ public class AetherPortalSize {
 
 			Block block1 = this.world.getBlock(x + j1 * i1, y - 1, z + k1 * i1);
 
-			if (block1 != Blocks.glowstone) {
+			if (block1 != Blocks.quartz_block) {
 				break;
 			}
 		}
 
 		block = this.world.getBlock(x + j1 * i1, y, z + k1 * i1);
-		return block == Blocks.glowstone ? i1 : 0;
+		return block == Blocks.quartz_block ? i1 : 0;
 	}
 
 	public int getHeight() {
@@ -100,13 +100,13 @@ public class AetherPortalSize {
 				if (i == 0) {
 					block = this.world.getBlock(k + Direction.offsetX[BlockPortal.field_150001_a[this.axis][0]], this.bottomLeft.posY + this.height, l + Direction.offsetZ[BlockPortal.field_150001_a[this.axis][0]]);
 
-					if (block != Blocks.glowstone) {
+					if (block != Blocks.quartz_block) {
 						break label24;
 					}
 				} else if (i == this.width - 1) {
 					block = this.world.getBlock(k + Direction.offsetX[BlockPortal.field_150001_a[this.axis][1]], this.bottomLeft.posY + this.height, l + Direction.offsetZ[BlockPortal.field_150001_a[this.axis][1]]);
 
-					if (block != Blocks.glowstone) {
+					if (block != Blocks.quartz_block) {
 						break label24;
 					}
 				}
@@ -118,7 +118,7 @@ public class AetherPortalSize {
 			int k = this.bottomLeft.posY + this.height;
 			int l = this.bottomLeft.posZ + j * Direction.offsetZ[BlockPortal.field_150001_a[this.axis][1]];
 
-			if (this.world.getBlock(i, k, l) != Blocks.glowstone) {
+			if (this.world.getBlock(i, k, l) != Blocks.quartz_block) {
 				this.height = 0;
 				break;
 			}

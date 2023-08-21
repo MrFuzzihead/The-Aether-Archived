@@ -69,7 +69,7 @@ public class ItemAetherPortalFrame extends Item
             }
         }
 
-        final Block frameBlock = Blocks.glowstone;
+        final Block frameBlock = Blocks.quartz_block;
 
         final Block portalBlock = BlocksAether.aether_portal;
 
